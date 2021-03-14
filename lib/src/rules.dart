@@ -48,6 +48,7 @@ import 'rules/avoid_types_as_parameter_names.dart';
 import 'rules/avoid_types_on_closure_parameters.dart';
 import 'rules/avoid_unnecessary_containers.dart';
 import 'rules/avoid_unused_constructor_parameters.dart';
+import 'rules/avoid_unused_files.dart';
 import 'rules/avoid_void_async.dart';
 import 'rules/avoid_web_libraries_in_flutter.dart';
 import 'rules/await_only_futures.dart';
@@ -237,6 +238,7 @@ void registerLintRules() {
     ..register(AvoidTypesOnClosureParameters())
     ..register(AvoidUnnecessaryContainers())
     ..register(AvoidUnusedConstructorParameters())
+    ..register(AvoidUnusedFiles())
     ..register(AvoidVoidAsync())
     ..register(AvoidWebLibrariesInFlutter())
     ..register(AwaitOnlyFutures())

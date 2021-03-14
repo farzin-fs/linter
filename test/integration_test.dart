@@ -20,6 +20,7 @@ import 'integration/avoid_relative_lib_imports.dart'
     as avoid_relative_lib_imports;
 import 'integration/avoid_renaming_method_parameters.dart'
     as avoid_renaming_method_parameters;
+import 'integration/avoid_unused_files.dart' as avoid_unused_files;
 import 'integration/avoid_web_libraries_in_flutter.dart'
     as avoid_web_libraries_in_flutter;
 import 'integration/cancel_subscriptions.dart' as cancel_subscriptions;
@@ -164,6 +165,7 @@ void ruleTests() {
   group('rule', () {
     unnecessary_lambdas.main();
     exhaustive_cases.main();
+    avoid_unused_files.main();
     avoid_web_libraries_in_flutter.main();
     packages_file_test.main();
     overridden_fields.main();
